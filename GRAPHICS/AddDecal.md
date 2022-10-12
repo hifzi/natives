@@ -5,7 +5,7 @@ ns: GRAPHICS
 
 ```c
 // 0xB302244A1839BDAD 0xEAD0C412
-int ADD_DECAL(int decalType, float posX, float posY, float posZ, float p4, float p5, float p6, float p7, float p8, float p9, float width, float height, float rCoef, float gCoef, float bCoef, float opacity, float timeout, BOOL p17, BOOL p18, BOOL p19);
+int ADD_DECAL(int decalType, float posX, float posY, float posZ, float p4, float p5, float p6, float p7, float p8, float p9, float width, float height, float rCoef, float gCoef, float bCoef, float opacity, float timeout, BOOL p17, BOOL p18, BOOL allowOnVehicles);
 ```
 
 ```
@@ -63,7 +63,13 @@ public enum DecalTypes
     porousPool_petrol,  
     porousPool_mud,  
     porousPool_water_ped_drip,  
-    liquidTrail_water = 9050  
+    liquidTrail_water = 9050,
+    texture_paint = 9118,
+    texture_paint_2,
+    texture_paint_follow_cam = 9120,
+    texture_paint_follow_cam_2,
+    texture_paint_follow_cam_3,
+    texture_paint_4,
 }  
 ```
 
@@ -87,6 +93,6 @@ public enum DecalTypes
 * **timeout**: 
 * **p17**: 
 * **p18**: 
-* **p19**: 
+* **allowOnVehicles**: 
 
 ## Return value
